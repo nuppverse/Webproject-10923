@@ -28,7 +28,6 @@ All programs are implemented step-by-step with a focus on clarity, correctness, 
 8. CSS selectors: class, id, descendant, group, and universal selectors  
 9. Responsive webpage using media queries and mobile-first design  
 10. Layout design using `div` and `span` with CSS styling  
-
 11. JavaScript program for basic arithmetic operations using user input  
 12. JavaScript conditional statements and looping (`for`, `while`, `do…while`)  
 13. User-defined JavaScript functions with `var`, `let`, and `const` scope demonstration  
@@ -38,14 +37,47 @@ All programs are implemented step-by-step with a focus on clarity, correctness, 
 17. Event handling using `addEventListener()` and `removeEventListener()`  
 18. Creating and manipulating DOM elements using `append`, `remove`, and child nodes  
 19. Canvas drawing using `<canvas>` element (shapes and colors)  
-
 20. Git repository initialization, committing changes, pushing to GitHub, and deploying a personal portfolio website using GitHub Pages or Netlify  
 
 ---
+## Practical Assignment 01 – HTML Basics
+1. HTML page with an image that redirects to the university website on click
+2. Student record table with Roll No, Name, Course, Marks, and Grade
+3. HTML form with Name, Email, Gender, Subject dropdown, and Comments
+4. Navigation bar using unordered list (Home, About, Courses, Contact)
+5. Webpage embedding audio (mp3) and video (mp4) with controls
 
-##  Deployment
-The personal portfolio website created in this repository has been successfully deployed using:
-- **GitHub Pages / Netlify**
+## Practical Assignment 02 – CSS, Flexbox & Media Queries
+1. Demonstration of CSS Box Model and display: inline-block
+2. Flexbox layout with three boxes (A, B, C) using justify-content
+3. Responsive layout using media queries (column layout below 600px)
+4. Styled input field with transition and focus effects
+
+## Practical Assignment 03 – JavaScript Array Operations
+1. Count even and odd numbers in an array
+2. Remove duplicate values from an array
+3. Find the sum of all elements in an array
+
+## Practical Assignment 04 – JavaScript ES6 & DOM Manipulation
+1. Arrow function to check if a number is even
+2. Multiline string using template literals
+3. Merge two arrays using the spread operator
+4. Button click event to change paragraph text
+
+## Practical Assignment 05 – Netlify Deployment
+Steps followed to deploy a project using Netlify:
+
+1. Created a Netlify account using email/GitHub login
+2. Logged in to the Netlify dashboard
+3. Selected “Add new site” → “Deploy manually”
+4. Uploaded the project folder containing HTML, CSS, and JavaScript files
+5. Successfully deployed the project and obtained a live URL
+The complete Practical Assignment 01 project was successfully deployed using Netlify.
+
+Live URL:
+https://earnest-cheesecake-b4abd2.netlify.app
+
+
 
 This helped me understand real-world workflow including version control and live hosting.
 
