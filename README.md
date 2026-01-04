@@ -72,7 +72,10 @@ Steps followed to deploy a project using Netlify:
 3. Selected “Add new site” → “Deploy manually”
 4. Uploaded the project folder containing HTML, CSS, and JavaScript files
 5. Successfully deployed the project and obtained a live URL
+The complete Practical Assignment 01 project was successfully deployed using Netlify.
 
+Live URL:
+https://earnest-cheesecake-b4abd2.netlify.app
 
 
 
