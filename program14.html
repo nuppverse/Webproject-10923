@@ -1,11 +1,48 @@
-what are we doing right now
-?
-hebfksf
-sfuksef
-shfusfh
-fhsuhf
-sfhsufhsfsuf
-]sfhusdfh]sfhusdf'sbfhsvd
-vfhyysftvf
-why/ telll me?
-haan
+14                                                                                                                                     <!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <script>
+        // oninput feedback
+        function checkFeedback() {
+            let fb = document.getElementById("feedback").value;
+            if (fb.length < 10) {
+                alert("Feedback should be at least 10 characters long");
+            }
+        }
+
+        // onsubmit validation
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let feedback = document.getElementById("feedback").value;
+
+            if (name === "" || feedback === "") {
+                alert("All fields are required!");
+                return false;
+            }
+
+            alert("Thank you for your valuable feedback!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Feedback Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    Name:<br>
+    <input type="text" id="name"><br><br>
+
+    Feedback:<br>
+    <textarea id="feedback" oninput="checkFeedback()"></textarea><br><br>
+
+    <input type="submit" value="Submit Feedback">
+
+</form>
+
+</body>
+</html>
