@@ -1,0 +1,47 @@
+<!DOCTYPE html>                                                                                      <!DOCTYPE html>
+<html>
+<head>
+    <title>Show / Hide and Toggle Class</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+        }
+
+        #box {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>JavaScript Show / Hide & Class Toggle</h2>
+
+<button onclick="toggleBox()">Show / Hide</button>
+<button onclick="toggleStyle()">Toggle Style</button>
+
+<div id="box">
+    This is a content box
+</div>
+
+<script>
+    function toggleBox() {
+        document.getElementById("box").classList.toggle("hidden");
+    }
+
+    function toggleStyle() {
+        document.getElementById("box").classList.toggle("highlight");
+    }
+</script>
+
+</body>
+</html>
