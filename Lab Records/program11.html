@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>JAVA SCRIPT</title>
-    </head>
-    <body><script>
-        document.write("Welcome to Java script");
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Arithmetic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .box {
+            width: 350px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+        }
+        button {
+            width: 48%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
-    </script>
-    </body>
+<div class="box">
+    <h2>Arithmetic Operations</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button><br>
+
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function add() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a + b);
+    }
+
+    function subtract() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a - b);
+    }
+
+    function multiply() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a * b);
+    }
+
+    function divide() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        if (b === 0) {
+            document.getElementById("result").innerText = "Division by zero is not allowed";
+        } else {
+            document.getElementById("result").innerText = "Result: " + (a / b);
+        }
+    }
+</script>
+
+</body>
 </html>

@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title> print number(1-10)</title>
+<head>
+    <title>Conditions and Loops</title>
 </head>
 <body>
-    <script>
-        var i;
-        for(let i=0; i<10; i++)
-        document.write(i);
-    </script>
+
+<h2>Conditional Statements and Loops</h2>
+
+<input type="number" id="num" placeholder="Enter a number">
+<br><br>
+
+<button onclick="run()">Check & Show</button>
+
+<p id="result"></p>
+
+<script>
+function run() {
+    var n = document.getElementById("num").value;
+    var text = "";
+
+    // Conditional statement
+    if (n % 2 == 0) {
+        text = "The number is Even\n";
+    } else {
+        text = "The number is Odd\n";
+    }
+
+    // For loop
+    text += "For loop: ";
+    for (var i = 1; i <= 5; i++) {
+        text += i + " ";
+    }
+
+    // While loop
+    text += "\nWhile loop: ";
+    var j = 1;
+    while (j <= 5) {
+        text += j + " ";
+        j++;
+    }
+
+    // Do-while loop
+    text += "\nDo-while loop: ";
+    var k = 1;
+    do {
+        text += k + " ";
+        k++;
+    } while (k <= 5);
+
+    document.getElementById("result").innerText = text;
+}
+</script>
+
 </body>
+</html>
